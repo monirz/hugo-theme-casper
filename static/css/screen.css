@@ -1040,6 +1040,22 @@ body.nav-opened .menu-button .word {
     box-shadow: #FFF 0 0 0 5px;
 }
 
+.post-card-image{
+    position: relative;
+
+    height: 200px;
+    background: #c5d2d9 no-repeat 50%;   
+   background-size: cover;  
+   
+}
+
+
+.post-card-image img{
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+
 .post-tag a{
     color: rgba(30, 78, 235, 0.952);
 }

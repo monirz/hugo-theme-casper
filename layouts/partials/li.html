@@ -1,5 +1,16 @@
 <article class="post {{ .Section }}">
+
+
+        {{if .Params.image}}
+        <a class="post-card-image-link" href="{{ .RelPermalink }}">
+          <div class="post-card-image" style="background-image: url({{.Params.image | relURL}});" ></div>
+        </a>
+        {{end}}
     <header class="post-header">
+
+    
+
+
         <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     </header>
     <section class="post-excerpt">
@@ -24,6 +35,7 @@
             {{$authorname}}
             {{end}}     
         {{end}}
+
 
         {{if .Params.tags }}on
             {{ range $index, $tag := .Params.tags }}
